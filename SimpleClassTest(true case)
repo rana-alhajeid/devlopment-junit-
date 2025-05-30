@@ -1,0 +1,23 @@
+/**true case **/
+package com.leecottrell.simpleclasstest;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class SimpleClassTest {
+    
+    public SimpleClassTest() {
+    }
+    @Test
+    
+  public void testDivEm()
+  {
+      SimpleClass  test=new SimpleClass();
+      int expected=2;
+      int actual;
+      
+      actual=test.divEm(4, 2);
+      
+      assertEquals(expected,actual,"divEm does not work");
+  }
+}
