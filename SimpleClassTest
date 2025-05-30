@@ -1,0 +1,23 @@
+/**failure test case expected 6 but actual 7**/
+package com.leecottrell.simpleclasstest;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class SimpleClassTest {
+    
+    public SimpleClassTest() {
+    }
+    @Test
+    
+  public void testDivEm()
+  {
+      SimpleClass  test=new SimpleClass();
+      int expected=6;
+      int actual;
+      
+      actual=test.divEm(14, 2);
+      
+      assertEquals(expected,actual,"divEm does not work");
+  }
+}
